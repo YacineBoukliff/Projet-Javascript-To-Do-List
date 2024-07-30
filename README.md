@@ -89,5 +89,5 @@ Les tâches sont automatiquement sauvegardées et seront rechargées lors de la 
 
 # Améliorations faites : 
 
-- 6. Ajout d'une confirmation avant la suppression
+6. Ajout d'une confirmation avant la suppression
    - Afficher une boîte de dialogue de confirmation avant de supprimer une tâche
