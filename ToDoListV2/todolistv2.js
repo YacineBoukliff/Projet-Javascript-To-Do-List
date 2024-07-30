@@ -10,9 +10,8 @@ function ajoutertache(){
   }
 
   else {
-    let li = document.createElement('liste')
+    let li = document.createElement('li')
     li.textContent = inputBox.value
-    console.log(li)
     divListe.appendChild(li)
     
     let span = document.createElement('span')
@@ -25,7 +24,7 @@ function ajoutertache(){
 }
 
 divListe.addEventListener('click',(e)=> {
-  if( e.target.tagName === 'LISTE'){
+  if( e.target.tagName === 'LI'){
     e.target.classList.toggle('checked')
     savedata()
   }
@@ -52,3 +51,8 @@ function recupererdata(){
 }
 
 recupererdata()
+
+
+const d = new Date();
+console.log(d.setHours(15, 35, 1));
+
