@@ -1,59 +1,64 @@
-# Projet Javascript To-Do-List
+# Application To-Do List
 
-Bien sûr, je vais vous fournir une documentation simple et claire des étapes de votre code pour votre application de liste de tâches. Cette documentation vous aidera à comprendre et à vous rappeler ce que vous avez fait, même après un certain temps.
-Documentation de l'application To-Do List
-1. Structure HTML (todolistv2.html)
-La structure HTML est simple et utilise des classes pour le style et la structure :
+Une application simple de liste de tâches réalisée avec HTML, CSS et JavaScript.
 
-Un conteneur principal avec la classe container
-À l'intérieur, un div avec la classe todo-app
-Un titre "To Do List" avec une icône
-Une zone de saisie dans un div avec la classe row
+## Structure du projet
 
-2. Style CSS (todolistv2.css)
-Le fichier CSS définit l'apparence de l'application :
+Le projet se compose de trois fichiers principaux :
 
-Réinitialisation des marges et du box-sizing pour tous les éléments
-Création d'un arrière-plan dégradé pour le conteneur principal
-Stylisation de la zone de l'application (.todo-app)
-Mise en forme du titre et de l'icône
-Stylisation de la zone de saisie et du bouton
-Formatage des éléments de la liste (li)
-Ajout d'icônes pour les tâches cochées et non cochées
-Stylisation du bouton de suppression (span)
+1. `todolistv2.html` - Structure HTML
+2. `todolistv2.css` - Styles CSS
+3. `todolistv2.js` - Fonctionnalités JavaScript
 
-3. Fonctionnalités JavaScript (todolistv2.js)
-Le JavaScript gère l'interactivité de l'application :
+## Fonctionnalités
 
-Sélection des éléments du DOM nécessaires
-Fonction ajoutertache() :
+- Ajouter des tâches à la liste
+- Marquer les tâches comme terminées
+- Supprimer des tâches
+- Sauvegarde automatique des tâches dans le localStorage
+- Interface utilisateur responsive et attrayante
 
-Vérifie si l'entrée n'est pas vide
-Crée un nouvel élément de liste (li) avec le texte saisi
-Ajoute un bouton de suppression (span) à chaque élément
-Sauvegarde les données
+## Détails techniques
 
+### 1. Structure HTML (todolistv2.html)
 
-Gestion des événements :
+- Conteneur principal avec classe `container`
+- Div interne avec classe `todo-app`
+- Titre "To Do List" avec icône
+- Zone de saisie dans un div avec classe `row`
 
-Clic sur le bouton pour ajouter une tâche
-Clic sur un élément de la liste pour le marquer comme terminé
-Clic sur le bouton de suppression pour retirer une tâche
-Appui sur "Entrée" pour ajouter une tâche
+### 2. Style CSS (todolistv2.css)
 
+- Réinitialisation des styles par défaut
+- Arrière-plan dégradé pour le conteneur principal
+- Stylisation de la zone d'application
+- Mise en forme du titre, de l'icône, de la zone de saisie et du bouton
+- Formatage des éléments de la liste avec icônes pour les tâches cochées/non cochées
+- Style du bouton de suppression
 
-Fonctions de sauvegarde et de récupération des données :
+### 3. Fonctionnalités JavaScript (todolistv2.js)
 
-savedata() : sauvegarde la liste dans le localStorage
-recupererdata() : récupère et affiche les données sauvegardées au chargement de la page
+- Fonction `ajoutertache()` pour ajouter de nouvelles tâches
+- Gestion des événements :
+  - Clic sur le bouton d'ajout
+  - Clic sur les éléments de la liste pour les marquer comme terminés
+  - Clic sur le bouton de suppression
+  - Appui sur "Entrée" pour ajouter une tâche
+- Fonctions `savedata()` et `recupererdata()` pour la persistance des données
 
+## Utilisation
 
+1. Ouvrez le fichier `todolistv2.html` dans un navigateur web.
+2. Saisissez une tâche dans le champ de texte.
+3. Cliquez sur le bouton "Ajouter" ou appuyez sur Entrée pour ajouter la tâche.
+4. Cliquez sur une tâche pour la marquer comme terminée.
+5. Cliquez sur le "×" à côté d'une tâche pour la supprimer.
 
-Fonctionnement général
+Les tâches sont automatiquement sauvegardées et seront rechargées lors de la prochaine ouverture de l'application.
 
-L'utilisateur peut ajouter une tâche en la saisissant et en cliquant sur le bouton ou en appuyant sur Entrée.
-Les tâches s'affichent dans une liste.
-L'utilisateur peut marquer une tâche comme terminée en cliquant dessus.
-Les tâches peuvent être supprimées en cliquant sur le bouton "×".
-La liste est sauvegardée automatiquement et rechargée au rafraîchissement de la page.
- 
+## Améliorations possibles
+
+- Ajout de catégories pour les tâches
+- Fonction de tri des tâches
+- Ajout de dates d'échéance pour les tâches
+- Synchronisation avec un backend pour sauvegarder les données en ligne
