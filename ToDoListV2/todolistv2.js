@@ -23,23 +23,29 @@ function ajoutertache(){
   savedata()
 }
 
-divListe.addEventListener('click',(e)=> {
-  if( e.target.tagName === 'LI'){
-    e.target.classList.toggle('checked')
-    savedata()
-  }
+function GererLesTaches(){
+  divListe.addEventListener('click', (e) => {
+    if (e.target.tagName === 'LI') {
+      e.target.classList.toggle('checked')
+      savedata()
+    }
+    else if (e.target.tagName === 'SPAN') {
+      // Créer et afficher la boîte de dialogue de confirmation
+      if (confirm("Êtes-vous sûr de vouloir supprimer cette tâche ?")) {
+        e.target.parentElement.remove()
+        savedata()
+      }
+    }
+  })
+  
+  inputBox.addEventListener('keypress',(e) => {
+    if(e.key === "Enter"){
+      ajoutertache()
+    }
+  })
+}
 
-  else if (e.target.tagName === 'SPAN'){
-    e.target.parentElement.remove()
-    savedata()
-  }
-})
 
-inputBox.addEventListener('keypress',(e) => {
-  if(e.key === "Enter"){
-    ajoutertache()
-  }
-})
 
 
 function savedata(){
@@ -52,7 +58,7 @@ function recupererdata(){
 
 recupererdata()
 
+GererLesTaches()
 
-const d = new Date();
-console.log(d.setHours(15, 35, 1));
+
 

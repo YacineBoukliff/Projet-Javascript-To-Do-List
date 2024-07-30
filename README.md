@@ -87,4 +87,7 @@ Les tâches sont automatiquement sauvegardées et seront rechargées lors de la 
 8. Ajout de la date de création pour chaque tâche
    - Afficher automatiquement la date et l'heure de création de chaque tâche
 
-.
+# Améliorations faites : 
+
+- 6. Ajout d'une confirmation avant la suppression
+   - Afficher une boîte de dialogue de confirmation avant de supprimer une tâche
