@@ -56,9 +56,35 @@ Le projet se compose de trois fichiers principaux :
 
 Les tâches sont automatiquement sauvegardées et seront rechargées lors de la prochaine ouverture de l'application.
 
-## Améliorations possibles
 
-- Ajout de catégories pour les tâches
-- Fonction de tri des tâches
-- Ajout de dates d'échéance pour les tâches
-- Synchronisation avec un backend pour sauvegarder les données en ligne
+## Perspectives d'amélioration
+
+1. Ajout d'une fonction de priorité
+   - Ajouter un bouton ou un menu déroulant pour définir la priorité (haute, moyenne, basse)
+   - Afficher les tâches avec différentes couleurs selon leur priorité
+
+2. Implémentation d'un compteur de tâches
+   - Afficher le nombre total de tâches
+   - Montrer combien de tâches sont terminées et combien restent à faire
+
+3. Ajout d'une fonction de recherche simple
+   - Ajouter un champ de recherche pour filtrer les tâches par mot-clé
+
+4. Création d'une fonction pour effacer toutes les tâches terminées
+   - Ajouter un bouton "Nettoyer" qui supprime toutes les tâches marquées comme terminées
+
+5. Amélioration de l'interface utilisateur
+   - Ajouter des icônes pour les boutons (par exemple, une icône de poubelle pour la suppression)
+   - Implémenter des transitions CSS simples pour l'ajout et la suppression de tâches
+
+6. Ajout d'une confirmation avant la suppression
+   - Afficher une boîte de dialogue de confirmation avant de supprimer une tâche
+
+7. Implémentation d'un mode sombre simple
+   - Ajouter un bouton pour basculer entre un thème clair et sombre
+   - Utiliser des variables CSS pour faciliter le changement de couleurs
+
+8. Ajout de la date de création pour chaque tâche
+   - Afficher automatiquement la date et l'heure de création de chaque tâche
+
+.
