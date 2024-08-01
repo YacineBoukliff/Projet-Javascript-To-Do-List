@@ -91,3 +91,6 @@ Les tâches sont automatiquement sauvegardées et seront rechargées lors de la 
 
 6. Ajout d'une confirmation avant la suppression
    - Afficher une boîte de dialogue de confirmation avant de supprimer une tâche
+
+4. Création d'une fonction pour effacer toutes les tâches terminées
+   - Ajouter un bouton "Nettoyer" qui supprime toutes les tâches marquées comme terminées
